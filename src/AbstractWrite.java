@@ -8,11 +8,7 @@
  *
  * @author alessandrostein
  */
-public class Read implements IRead{
-
-    @Override
-    public void read() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+public abstract class AbstractWrite {
     
+    public abstract void write(String msg);
 }

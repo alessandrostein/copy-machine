@@ -8,10 +8,10 @@
  *
  * @author alessandrostein
  */
-public class Read implements IRead{
+public class Counter extends AbstractWrite{
 
     @Override
-    public void read() {
+    public void write(String msg) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

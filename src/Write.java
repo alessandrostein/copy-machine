@@ -8,6 +8,11 @@
  *
  * @author alessandrostein
  */
-public class Write {
+public class Write extends AbstractWrite{
+
+    @Override
+    public void write(String msg) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
