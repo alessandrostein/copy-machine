@@ -8,7 +8,7 @@
  *
  * @author alessandrostein
  */
-public class Read implements IRead{
+public class Read implements IRead {
 
     @Override
     public void read() {
