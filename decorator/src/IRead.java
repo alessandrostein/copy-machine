@@ -1,3 +1,6 @@
+
+import java.awt.datatransfer.Clipboard;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,6 +13,6 @@
  */
 public interface IRead {
     
-    void read();
+    Clipboard read();
     
 }
