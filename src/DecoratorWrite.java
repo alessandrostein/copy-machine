@@ -8,8 +8,13 @@
  *
  * @author alessandrostein
  */
-public abstract class AbstractWrite {
+public abstract class DecoratorWrite extends AbstractWrite{
     
-       public abstract void write(String msg);
+    protected AbstractWrite abswrite;
     
+    public DecoratorWrite(AbstractWrite abswrite){
+        this.abswrite = abswrite;
+    }
+    
+ 
 }

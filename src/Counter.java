@@ -8,11 +8,20 @@
  *
  * @author alessandrostein
  */
-public class Counter extends AbstractWrite{
+public class Counter extends DecoratorWrite{
+    
+    static int count = 0;
+
+    public Counter(AbstractWrite abswrite) {
+        super(abswrite);
+    }
 
     @Override
     public void write(String msg) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println(msg);
+        count ++;
+        System.out.println("Impressões: " + count);
+        
     }
     
 }
